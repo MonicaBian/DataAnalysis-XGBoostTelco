@@ -2,16 +2,17 @@
 
 # Introduction 
 
-- This project aims to predict customer churn using historical telecom usage data. The objective is to develop a predictive model that accurately identifies customers likely to churn, and to uncover key factors influencing churn behaviour.
+- This project aims to predict customer churn using historical telecommunication usage data. The objective is to develop a predictive machine learning model that accurately identifies customers likely to churn, and to uncover key factors influencing churn behaviour.
 
-- We apply the customer data against machine learning algorithms to identify trends to attributes that lead to churn. We then present recommendations to help address these issues to enable proactive customer retention and increase in customer satisfaction.
-
-# Algorithm Selection
-
-XGBoost (Extreme Gradient Boosting) optimized machine learning library that uses an advanced form of gradient boosting to solve supervised learning problems like classification and regression. This was employed over other predictive models such as Random Forest due to its robustness, ability to handle mixed data types, and effectiveness with imbalanced classification tasks.
+- Early identification of customers at risk of leaving allows the company to design targeted retention campaigns and reduce revenue loss.
 
 
-# Preliminary Results
+# Model Selection
+
+XGBoost (Extreme Gradient Boosting) optimized machine learning library that uses an advanced form of gradient boosting to solve supervised learning problems like classification and regression. This was employed over other predictive machine learning models such as Random Forest due to its robustness, ability to handle mixed data types, and effectiveness with imbalanced classification tasks.
+
+
+# Model Results
 
 As depicted in the table below, the XGBoost churn prediction model delivers strong and reliable performance for business application:
 - An Accuracy of 95.35%, the model correctly predicts the majority of customer outcomes.
@@ -22,8 +23,7 @@ As depicted in the table below, the XGBoost churn prediction model delivers stro
 
 <br>
 
-![Table](images/table.png)
-
+<img src="images/Table.png" alt="Table" style="display: block; margin: 0 auto; width: 90%;" />
 <br>
 
 ## Confusion Matrix
@@ -49,17 +49,18 @@ The XGBoost model identified several key factors that most strongly influence cu
 # Insights, Predictive Indicators and Recommendations
 
 
-<span style="color: red;">Indicator</span>: International Plan Customers Are the Highest-Risk Segment The model identified “international plan” as the single most influential factor driving churn.
+
+1. <b> International Plan Customers Are the Highest-Risk Segment </b>
+
+<b> Indicator: </b> The model identified “international plan” as the single most influential factor driving churn.
 Customers subscribed to international plans appear significantly more likely to leave, suggesting potential dissatisfaction with international call pricing or perceived value.
 
+<b> Recommendation: </b> This presents an actionable opportunity for the business to review and redesign international plans, improve transparency around costs, and introduce loyalty incentives or bundle offers for these customers. Targeted retention campaigns focusing on this high-risk group could substantially reduce overall churn.
 
 
-<span style="color: green;">Recommendation</span>: This presents an actionable opportunity for the business to review and redesign international plans, improve transparency around costs, and introduce loyalty incentives or bundle offers for these customers. Targeted retention campaigns focusing on this high-risk group could substantially reduce overall churn.
+2. <b> Frequent Customer Service Callers Indicate Unresolved Issues </b>
 
+<b> Indicator: </b> The second most important predictor, “customer service calls,” highlights that customers who contact support multiple times are strong churn indicators. This pattern suggests underlying frustration, possibly from billing disputes, technical issues, or unmet expectations.
 
-____
+<b> Recommendation: </b> Operationally, this insight points to a need for enhanced service quality monitoring—for example, flagging accounts with repeated service interactions for proactive outreach. Implementing early-warning systems to identify and address these customers’ pain points could prevent churn before it occurs.
 
-<span style="color: red;">Indicator</span>: Frequent Customer Service Callers Indicate Unresolved Issues The second most important predictor, “customer service calls,” highlights that customers who contact support multiple times are strong churn indicators. This pattern suggests underlying frustration, possibly from billing disputes, technical issues, or unmet expectations.
-
-<span style="color: green;">Recommendation</span>: Operationally, this insight points to a need for enhanced service quality monitoring—for example, flagging accounts with repeated service interactions for proactive outreach. Implementing early-warning systems to identify and address these customers’ pain points could prevent churn before it occurs.
-___
